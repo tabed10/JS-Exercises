@@ -13,3 +13,12 @@ return sum;
 }
 
 console.log(sum([1, 2, 3, 4]))
+
+// Task 3: Email validation
+/* var validationEmail = function(email) */
+function validationEmail(email){
+    return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
+}
+
+console.log(validationEmail("ssssssdsdas"))
+console.log(validationEmail("sabbirhossainabed@gmail.com"))
