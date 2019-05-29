@@ -65,3 +65,50 @@ var status = function(index, prop){
     return library[index][prop]
 } 
 console.log(status(2, 'author'));
+
+/*Task 5*/
+
+var cart = [ 
+    {
+        name: 'Shoes',
+        price: 560,
+        quantity: 4
+    },
+    {
+        name: 'Regular Tees',
+        price: 455.50,
+        quantity: 6
+    },
+    {
+        name: 'Socks',
+        price: 65.99,
+        quantity: 2
+    }];
+    
+    // 5a - Add a new item
+    function addItem(newItem){
+        cart.push(newItem);
+    }
+    addItem({name: 'Socks',
+    price: 65.99,
+    quantity: 2});
+    console.log(cart)
+
+    // 5b - sort by a given property
+    function sortCart(prop){
+        cart.sort(function(a, b){
+            return a[prop] > b[prop]
+        })
+    }
+    sortCart('name')
+    console.log(cart)
+
+    //5c - find item by name
+    function findByName(name){
+
+    }
+
+    //5d - get total cost
+    function getTotalCost(){
+
+    }
